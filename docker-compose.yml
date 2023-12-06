@@ -9,8 +9,8 @@ services:
       - "3306:3306"
     volumes:
       - vprodbdata:/var/lib/mysql
-    Environment:
-      - MYSQL_ROOT_PASSWORD=vprodbpass
+    #Environment:
+     # - MYSQL_ROOT_PASSWORD=vprodbpass
   redis:
     image: "redis:alpine"
 
